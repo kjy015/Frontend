@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>자기소개 페이지</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>나만의 이력서</title>
 </head>
 <body>
-    <h1>안녕하세요!</h1>
-    <p>이것은 HTML로 만든 첫번째 페이지입니다.</p>
+  <header class="page-header">
+    <h1>Backend Developer Resume</h1>
+  </header>
+  <div class="container">
+    <aside class="left-panel">
+      <div class="left-top">
+        <section class="profile card">
+          <h2>홍길동</h2>
+          <img src="profile.png" alt="프로필 사진" width="100px" height="100px">
+          <p><strong>생년월일:</strong> <time datetime="1993-05-18">1993.05.18</time></p>
+          <p><strong>이메일:</strong> <a href="mailto:dmchang@mq.com">dmchang@mq.com</a></p>
+          <p><strong>연락처:</strong> <a href="tel:010-1234-5678">010-1234-5678</a></p>
+        </section>
+
+        <section class="licenses card">
+          <h3>자격증</h3>
+          <ul>
+            <li>정보처리기사 - 2020.06</li>
+            <li>SQL 개발자(SQLD) - 2021.11</li>
+            <li>리눅스 마스터 2급 - 2022.03</li>
+            <li>컴퓨터활용능력 1급 - 2020.10</li>
+            <li>ADsP (데이터분석 준전문가) - 2023.01</li>
+            <li>TOEIC 850 - 2024.05</li>
+            <li>COS Pro 1급 (Python) - 2023.08</li>
+            <li>AWS Certified Solutions Architect - Associate - 2024.02</li>
+            <li>네트워크관리사 2급 - 2021.09</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="card">
+        <h3>학력</h3>
+        <ul>
+          <li>서울대학교 컴퓨터공학과 (2014.03 ~ 2018.02)</li>
+          <li>구일고등학교 (2011.03 ~ 2014.02)</li>
+          <li>서울중학교 (2008.03 ~ 2011.02)</li>
+          <li>서울초등학교 (2002.03 ~ 2008.02)</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="right-panel">
+      <section class="experience">
+        <h2>경력</h2>
+        <article>
+          <h3>Google - 백엔드 개발자</h3>
+          <p>2022.03 ~ 현재</p>
+          <ul>
+            <li>쇼핑모델 API 서버 설계 및 운영</li>
+            <li>Spring Boot 기반 RESTful 서비스 개발</li>
+          </ul>
+        </article>
+        <article>
+          <h3>NVIDIA - 서버 개발자</h3>
+          <p>2020.09 ~ 2022.02</p>
+          <ul>
+            <li>거래 시스템 개선</li>
+            <li>DB 최적화 및 모니터링 자동화</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>기술 스택</h2>
+        <div class="skills-flex">
+          <div>Java</div>
+          <div>Spring Boot</div>
+          <div>MySQL</div>
+          <div>Redis</div>
+          <div>Docker</div>
+          <div>AWS</div>
+          <div>JavaScript</div>
+          <div>React</div>
+          <div>C++</div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
