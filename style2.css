@@ -1,0 +1,38 @@
+body {
+  background-color: rgba(212, 212, 206, 0.928);
+}
+
+/* 기본: 모바일 (화면이 작을 때) - 1열 배치 */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 한 줄에 1개 */
+  gap: 20px;                 /* 카드 사이 간격 */
+  padding: 20px;
+}
+
+/* 태블릿/중간 화면 (예: 가로 768px 이상) - 2열 배치 */
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 */
+  }
+}
+
+/* 데스크톱/큰 화면 (예: 가로 1024px 이상) - 3열 배치 */
+@media (min-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개 */
+  }
+}
+
+/* 카드 내부 스타일 (이미지처럼 보이게 보너스!) */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  background-color: white;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 사진을 정사각형으로 유지 */
+  object-fit: cover;
+}
