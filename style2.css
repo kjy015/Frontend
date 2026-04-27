@@ -48,3 +48,37 @@ body {
   margin: 50px;
   background-color: white;
 }
+
+/* 처음에는 숨겨둠 */
+.content-box {
+    display: none;
+    width: 1000px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #fdcb6e;
+    margin-top: 15px;
+}
+
+/* active 클래스가 추가되면 보여줌 */
+.content-box.active {
+    display: block;
+}
+
+.input-group {
+  margin-bottom: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #ff6b35;
+}

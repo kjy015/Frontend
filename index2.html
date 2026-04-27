@@ -5,12 +5,116 @@
   <link rel="stylesheet" href="style2.css">
   <title>아기사자 자기소개</title>
 </head>
+<body>
+
+    <button id="toggleBtn">아기 사자 추가</button>
+    <div id="myContainer" class="content-box">
+        <p>이름</p>
+        <div class="input-group">
+          <input
+            id="nameInput"
+            class="input"
+            placeholder="이름을 입력하세요"
+          />
+        </div>
+
+        <p>파트</p>
+        <select>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Design</option>
+          <option>Product Manager</option>
+        </select>
+
+        <p>관심 기술(쉼표로 구분)</p>
+        <div class="input-group">
+          <input
+            id="skillInput"
+            class="input"
+            placeholder="예:HTML/CSS, JavaScript"
+          />
+        </div>
+
+        <p>한 줄 소개(요약 카드)</p>
+        <div class="input-group">
+          <input
+            id="shortInput"
+            class="input"
+            placeholder="예:살려줘"
+          />
+        </div>
+
+        <p>자기소개(상세 카드)</p>
+        <div class="input-group">
+          <input
+            id="longInput"
+            class="input"
+            placeholder="예:계속되는 중간고사로 죽어가고 있습니다."
+          />
+        </div>
+
+        <p>이메일</p>
+        <div class="input-group">
+          <input
+            id="longInput"
+            class="input"
+            placeholder="예:lion@example.com"
+          />
+        </div>
+
+        <p>웹사이트(GitHub)</p>
+        <div class="input-group">
+          <input
+            id="longInput"
+            class="input"
+            placeholder="예:github.com"
+          />
+        </div>
+
+        <p>휴대전화</p>
+        <div class="input-group">
+          <input
+            id="longInput"
+            class="input"
+            placeholder="예:010-1234-5678"
+          />
+        </div>
+
+        <p>한 마디</p>
+        <div class="input-group">
+          <input
+            id="longInput"
+            class="input"
+            placeholder="예:지각 제출 죄송합니다..."
+          />
+        </div>
+
+        <button id="toggleBtn">추가하기</button>
+        <div id="myContainer" class="content-box">
+            여기는 컨테이너 내부입니다!
+        </div>
+        
+        <button id="toggleBtn">취소</button>
+        <div id="myContainer" class="content-box">
+            여기는 컨테이너 내부입니다!
+        </div>
+    </div>
+
+    <button id="toggleBtn">마지막 아기 사자 삭제</button>
+    <div id="myContainer" class="content-box">
+        여기는 컨테이너 내부입니다!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
 <div class="card-container">
   <div class="card"> </div>
   <div class="card"> </div>
   <div class="card"> </div>
 </div>
+
 
 <body>
     <div class="card-container">
