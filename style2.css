@@ -37,6 +37,26 @@ body {
   object-fit: cover;
 }
 
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.card-info h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+.card-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
 .container {
   display: flex;
   justify-content: flex-start;
